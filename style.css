@@ -1,0 +1,342 @@
+:root{
+    --cor-de-caixa: #D15DFF;
+    --btn:#F335CB;
+    --branco:#fff;
+    --fundo:#020317;
+    --preto:#020317;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+hr{
+    border: none;            
+    height: 2px;               
+    background-color: var(--cor-de-caixa);
+}
+
+/* --- HERO --- */
+
+.hero {
+    width: 100%;
+    min-height: 74vh;
+    padding: 20px 20px 0 20px;
+    background: var(--fundo);
+    background-size: cover;
+}
+
+/* --- HEADER & NAV --- */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 22px;
+}
+.botoes{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    border-bottom: 5px solid transparent;
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+nav a:hover {
+    color: var(--cor-de-caixa);
+    border-bottom: 5px solid var(--cor-de-caixa);
+}
+
+/* --- LOGO--- */
+.logo img{
+    width: 99px;
+}
+
+
+/* --- BUTTONS --- */
+
+.btn-curriculo{
+    padding: 15px;
+    background-color: transparent;
+    color: var(--cor-de-caixa);
+    border: 1px solid var(--cor-de-caixa);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-curriculo:hover {
+    background-color: var(--cor-de-caixa);
+    color: var(--preto);
+}
+
+.btn-musica{
+    padding: 15px;
+    background-color: transparent;
+    color: var(--branco);
+    border: 1px solid var(--cor-de-caixa);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-musica:hover {
+    background-color: var(--cor-de-caixa);
+    color: var(--preto);
+}
+
+/* --- HOME --- */
+.inicio{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--branco);
+}
+.inicio-texto{
+    width: 50%;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.inicio-texto h3 {
+    white-space: pre-wrap; /* Garante que os espaços não sumam! */
+    margin-top: 10px;
+    margin-bottom: 18px; 
+    line-height: 1.4;
+}
+
+span{
+    background-image: linear-gradient(180deg, #f4bded, #F138B9, #FF0071);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+    font-size: 80px;
+    text-shadow:
+    0 0 6px #f4bded,
+    0 0 14px #F138B9,
+    0 0 32px #FF0071,
+    0 0 60px #fb00ff;
+}
+
+.btn-ver-projetos{
+    padding: 15px;
+    background-color: var(--btn);
+    color: var(--branco);
+    border: 1px solid var(--btn);
+    border-radius: 30px;
+    cursor: pointer;
+    height: 44px;
+    margin-top: 5px;
+}
+
+.btn-ver-projetos:hover {
+    background-color: #a32688 ;
+    color: var(--branco);
+}
+/*---REDES SOCIAIS---*/
+.redes-sociais{
+    height: 40px;
+    width: 20px;
+    display: flex;
+    margin-top: 3px;
+    gap: 16px;
+}
+.redes-sociais img:hover{
+    background-color: var(--cor-de-caixa);
+    color: var(--preto);
+    border-radius:20px ;
+}
+
+/* --- SOBRE --- */
+.sobre{
+    padding: 20px 20px 0 20px;
+    background-color: var(--fundo);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: var(--branco);
+}
+.sobre-texto{
+    width: 50%;
+    padding: 100px;
+    font-size: 20px;
+}
+.sobre-texto h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+/* --- HABILIDADES --- */
+.habilidades{
+    width: 100%;
+    height: 70vh;
+    padding: 20px 20px 0 20px;
+    background-color: var(--fundo);
+}
+.habilidades-container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.habilidade{
+    padding: 80px;
+    height: 10px;
+    align-items: center;
+}
+.habilidades h2{
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+}
+
+/* --- PROJETOS --- */
+.projetos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px; 
+    background: var(--fundo);
+}
+.projetos-container{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.projetos h2{
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+}
+
+/* --- CERTIFICADOS --- */
+.certificados{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px; 
+    background: var(--fundo);
+}
+.certificados-container{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.certificados h2{
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+}
+
+/* --- CONTATO --- */
+.contato{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px; 
+    background: var(--fundo);
+    color: var(--branco);
+    align-items: center;
+}
+.contato-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid var(--cor-de-caixa);
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+}
+.contato h2{
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+}
+
+/* --- FOOTER --- */
+
+.inferior-footer{
+    background-color: var(--fundo);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: var(--branco);
+}
+/* Rolagem suave ao clicar no menu */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Animação de entrada ao rolar a página */
+.animar {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.7s ease-out;
+}
+
+.animar.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efeito visual ao passar o mouse nos projetos, habilidades e certificados */
+.habilidade img, .projeto img, .certificado img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.habilidade img:hover {
+    transform: scale(1.15);
+}
+
+.projeto img:hover, .certificado img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px var(--cor-de-caixa);
+}
+
+/* Animação do botão quando a música estiver tocando */
+.btn-musica.tocando {
+    background-color: var(--btn);
+    border-color: var(--btn);
+    color: var(--branco);
+    box-shadow: 0 0 15px var(--btn), 0 0 30px var(--cor-de-caixa);
+    animation: pulsarMusica 1.5s infinite ease-in-out;
+}
+
+@keyframes pulsarMusica {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
